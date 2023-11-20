@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <title>Frontend Mentor | Todo app</title>
+</head>
+<body>
+ <header>
+  <h1>TODO</h1>
+  <div class="theme-block">
+    <input type="checkbox" name="theme" id="theme">
+    <label for="theme"></label>
+  </div>
+ </header>
+
+<div class="container">
+  <div class="input-todo flex-row">
+    <span></span>
+    <input type="text" placeholder="Create a new todo..." name="addItem" id="addItem">
+  </div>
+
+  <section class="todo-list">
+    <ul>
+      <li class="flex-row">
+        <label class="list-item">
+          <input type="checkbox" name="todoItem" checked>
+          <span class="checkmark"></span>
+          <span class="text">Create a todo</span>
+        </label>
+        <span class="remove"></span>
+      </li>
+      <li class="flex-row">
+        <label class="list-item">
+          <input type="checkbox" name="todoItem">
+          <span class="checkmark"></span>
+          <span class="text">It can be anything</span>
+        </label>
+        <span class="remove"></span>
+      </li>
+      <li class="flex-row">
+        <label class="list-item">
+          <input type="checkbox" name="todoItem">
+          <span class="checkmark"></span>
+          <span class="text">Yes. Anything.</span>
+        </label>
+        <span class="remove"></span>
+      </li>
+    </ul>
+  </section>
+  <div class="filter-options flex-row">
+    <div class="items-left"><span>0</span> items left</div>
+    <div class="filter flex-row filter-desktop">
+      <label>
+        <input type="radio" name="filter" id="all" checked>
+        <span>All</span>
+      </label>
+      <label>
+        <input type="radio" name="filter" id="active">
+        <span>Active</span>
+      </label>
+      <label>
+        <input type="radio" name="filter" id="completed">
+        <span>Completed</span>
+      </label>
+    </div>
+    <span class="clear">Clear Completed</span>
+
+    
+  </div>
+  <div class="filter flex-row filter-mobile">
+    <label>
+      <input type="radio" name="filter" id="all" checked>
+      <span>All</span>
+    </label>
+    <label>
+      <input type="radio" name="filter" id="active">
+      <span>Active</span>
+    </label>
+    <label>
+      <input type="radio" name="filter" id="completed">
+      <span>Completed</span>
+    </label>
+  </div>
+
+</div>
+
+  <script src="./js/script.js"></script>
+ </body>
+</html>
